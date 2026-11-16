@@ -23,7 +23,6 @@ flowchart LR
     E --> F[OpenAI Synthesis Agent]
     F --> G[Structured Research Brief]
 
----
 🛠️ Tech Stack
 Agent Framework: autogen-agentchat, autogen-core, autogen-ext
 
