@@ -22,8 +22,19 @@ flowchart LR
     D -->|Raw Metadata & Abstracts| E[Tiktoken Context Manager]
     E --> F[OpenAI Synthesis Agent]
     F --> G[Structured Research Brief]
-🛠️ Tech Stack
+
 ---
+🛠️ Tech Stack
+Agent Framework: autogen-agentchat, autogen-core, autogen-ext
+
+LLM & Tokenization: openai, tiktoken
+
+Data Source: arxiv
+
+Frontend: streamlit
+
+🚀 Quickstart
+
 Agent Framework: autogen-agentchat, autogen-core, autogen-ext
 
 LLM & Tokenization: openai, tiktoken
