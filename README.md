@@ -21,7 +21,7 @@ flowchart LR
     C --> D[arXiv Retrieval Agent]
     D -->|Raw Metadata & Abstracts| E[Tiktoken Context Manager]
     E --> F[OpenAI Synthesis Agent]
-    F --> G[Structured Research Brief]
+    F --> G[Structured Research Brief] ```
 
 🛠️ Tech Stack
 Agent Framework: autogen-agentchat, autogen-core, autogen-ext
