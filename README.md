@@ -21,27 +21,22 @@ flowchart LR
     C --> D[arXiv Retrieval Agent]
     D -->|Raw Metadata & Abstracts| E[Tiktoken Context Manager]
     E --> F[OpenAI Synthesis Agent]
-    F --> G[Structured Research Brief] ```
+    F --> G[Structured Research Brief]
+```
 
-🛠️ Tech Stack
-Agent Framework: autogen-agentchat, autogen-core, autogen-ext
+---
 
-LLM & Tokenization: openai, tiktoken
+### 🛠️ Tech Stack
+* **Agent Framework:** `autogen-agentchat`, `autogen-core`, `autogen-ext`
+* **LLM & Tokenization:** `openai`, `tiktoken`
+* **Data Source:** `arxiv`
+* **Frontend:** `streamlit`
 
-Data Source: arxiv
+---
 
-Frontend: streamlit
+### 🚀 Quickstart
 
-🚀 Quickstart
-
-Agent Framework: autogen-agentchat, autogen-core, autogen-ext
-
-LLM & Tokenization: openai, tiktoken
-
-Data Source: arxiv
-
-Frontend: streamlit
-
+```bash
 # 1. Clone the repository
 git clone [https://github.com/oscartandi/arxiv_paper_finder.git](https://github.com/oscartandi/arxiv_paper_finder.git)
 cd arxiv_paper_finder
@@ -54,3 +49,4 @@ export OPENAI_API_KEY="your-api-key-here"
 
 # 4. Launch the Streamlit app
 streamlit run app.py
+```
