@@ -8,7 +8,7 @@
 * **Multi-Agent Orchestration:** Uses `autogen-agentchat` and `autogen-core` to coordinate specialized agents for query formulation, paper retrieval, and executive summarization.
 * **Live arXiv Integration:** Queries the arXiv API in real time to fetch relevant preprints, metadata, abstracts, and publication links.
 * **Token-Optimized Synthesis:** Leverages `tiktoken` to manage prompt budgets cleanly across long abstracts and multi-paper comparisons.
-* **Interactive Streamlit UI:** Provides a clean web interface for researchers and analysts to run natural-language literature queries[cite: 5].
+* **Interactive Streamlit UI:** Provides a clean web interface for researchers and analysts to run natural-language literature queries.
 
 ---
 
@@ -22,3 +22,25 @@ flowchart LR
     D -->|Raw Metadata & Abstracts| E[Tiktoken Context Manager]
     E --> F[OpenAI Synthesis Agent]
     F --> G[Structured Research Brief]
+🛠️ Tech Stack
+---
+Agent Framework: autogen-agentchat, autogen-core, autogen-ext
+
+LLM & Tokenization: openai, tiktoken
+
+Data Source: arxiv
+
+Frontend: streamlit
+
+# 1. Clone the repository
+git clone [https://github.com/oscartandi/arxiv_paper_finder.git](https://github.com/oscartandi/arxiv_paper_finder.git)
+cd arxiv_paper_finder
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Set your OpenAI API key
+export OPENAI_API_KEY="your-api-key-here"
+
+# 4. Launch the Streamlit app
+streamlit run app.py
